@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>AC2 Sistema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>📊 Sistema AC2</h1>
+
+  <!-- ================= PROJETOS ================= -->
+  <section class="card">
+    <h2>📁 Projetos</h2>
+
+    <h3>Criar Projeto</h3>
+    <input id="projNome" placeholder="Nome do projeto">
+    <input id="projData" type="date">
+    <button onclick="criarProjeto()">Criar Projeto</button>
+
+    <hr>
+
+    <h3>Buscar Projeto por ID</h3>
+    <input id="projId" placeholder="ID do projeto">
+    <button onclick="buscarProjeto()">Buscar</button>
+    <pre id="resProjeto"></pre>
+
+    <hr>
+
+    <h3>📋 Listar todos os projetos</h3>
+    <button onclick="listarProjetos()">Listar</button>
+    <pre id="listaProjetos"></pre>
+
+    <hr>
+
+    <h3>📅 Listar por período</h3>
+    <input id="inicio" type="date">
+    <input id="fim" type="date">
+    <button onclick="listarPorPeriodo()">Buscar</button>
+    <pre id="listaPeriodo"></pre>
+
+  </section>
+
+  <!-- ================= FUNCIONÁRIOS ================= -->
+  <section class="card">
+    <h2>👤 Funcionários</h2>
+
+    <h3>Criar Funcionário</h3>
+    <input id="funcNome" placeholder="Nome do funcionário">
+    <button onclick="criarFuncionario()">Criar</button>
+
+    <hr>
+
+    <h3>Projetos do Funcionário</h3>
+    <input id="funcId" placeholder="ID funcionário">
+    <button onclick="buscarProjetosFuncionario()">Buscar</button>
+    <pre id="resFunc"></pre>
+
+  </section>
+
+  <!-- ================= VINCULAR ================= -->
+  <section class="card">
+    <h2>🔗 Vincular</h2>
+
+    <input id="vincProj" placeholder="ID Projeto">
+    <input id="vincFunc" placeholder="ID Funcionário">
+    <button onclick="vincular()">Vincular</button>
+
+  </section>
+
+  <!-- ================= SETOR ================= -->
+  <section class="card">
+    <h2>🏢 Setor</h2>
+
+    <h3>Criar Setor</h3>
+    <input id="setorNome" placeholder="Nome do setor">
+    <button onclick="criarSetor()">Criar</button>
+
+    <hr>
+
+    <h3>Buscar Setor</h3>
+    <input id="setorId" placeholder="ID setor">
+    <button onclick="buscarSetor()">Buscar</button>
+    <pre id="resSetor"></pre>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
